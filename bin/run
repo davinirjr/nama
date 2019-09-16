@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+ruby -Ilib -rnama -e 'Nama.execute'
