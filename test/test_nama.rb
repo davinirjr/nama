@@ -2,11 +2,15 @@ require 'minitest/autorun'
 require 'nama'
 
 class NamaTest < Minitest::Test
+  def test_multiple_35
+    assert_equal 'Nama Team', Nama.apply_rules(35)
+    assert_equal 'Nama Team', Nama.apply_rules(70)
+  end
+
   def test_multiple_7
     assert_equal 'Team', Nama.apply_rules(7)
     assert_equal 'Team', Nama.apply_rules(14)
     assert_equal 'Team', Nama.apply_rules(21)
-    assert_equal 'Team', Nama.apply_rules(35)
   end
 
   def test_multiple_5
