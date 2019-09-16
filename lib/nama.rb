@@ -14,7 +14,9 @@ class Nama
   # Apply business rules against given number.
 
   def self.apply_rules(num)
-    if (num % 5).zero?
+    if (num % 7).zero?
+      'Team'
+    elsif (num % 5).zero?
       'Nama'
     else
       num.to_s
