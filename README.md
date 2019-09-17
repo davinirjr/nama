@@ -79,3 +79,27 @@ There is a helper script for this task, just use:
 ```
 ./bin/run
 ```
+
+## Docker
+
+Use the following to build the docker image (`nama-test` is a suggestion):
+
+```
+docker build -t nama-test .
+```
+
+It will take a while.
+
+After image was built, use the following to run tests:
+
+```
+docker run nama-test ./bin/test
+```
+
+And the following to run the solution:
+
+```
+docker run nama-test
+```
+
+Outputs should be similar to those in prior sections.
